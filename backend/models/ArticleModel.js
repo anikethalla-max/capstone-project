@@ -1,7 +1,6 @@
 ﻿import mongoose from 'mongoose'
 
 
-//user comment schema
 const userCommentSchema=new mongoose.Schema({
     user:{
         type:mongoose.Schema.Types.ObjectId,
@@ -17,7 +16,6 @@ const userCommentSchema=new mongoose.Schema({
     strict:"throw"
 })
 
-//Create article SChema
 const articleSchema=new mongoose.Schema({
     author:{
         type:mongoose.Schema.Types.ObjectId,
@@ -43,6 +41,4 @@ const articleSchema=new mongoose.Schema({
     }
 },{ timestamps: true })
 
-//Create model
 export const Article=mongoose.model("Article",articleSchema)
-

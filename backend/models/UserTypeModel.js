@@ -1,6 +1,5 @@
 import mongoose from "mongoose";
 
-//define user achema
 const userSchema = new mongoose.Schema({
   clerkUserId: {
     type: String,
@@ -14,7 +13,7 @@ const userSchema = new mongoose.Schema({
   },
   lastName: {
     type: String,
-   
+
   },
   email: {
     type: String,
@@ -38,5 +37,4 @@ const userSchema = new mongoose.Schema({
 });
 
 
-//create UserModel
 export const User=mongoose.model("User",userSchema)
